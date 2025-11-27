@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vista de lista de tutoriales -->
+    <record id="view_inventory_tutorial_tree" model="ir.ui.view">
+        <field name="name">inventory.tutorial.tree</field>
+        <field name="model">inventory.tutorial</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="category"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Vista de formulario de tutoriales -->
+    <record id="view_inventory_tutorial_form" model="ir.ui.view">
+        <field name="name">inventory.tutorial.form</field>
+        <field name="model">inventory.tutorial</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_view_tutorial" string="Ver Tutorial" type="object" class="btn-primary"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="category"/>
+                            <field name="sequence"/>
+                        </group>
+                        <group>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Descripción">
+                            <field name="description"/>
+                        </page>
+                        <page string="Contenido">
+                            <field name="content" widget="html"/>
+                        </page>
+                        <page string="GIF Guiado">
+                            <group>
+                                <field name="gif_filename" invisible="1"/>
+                                <field name="gif_guide" widget="image" filename="gif_filename"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vista kanban de tutoriales -->
+    <record id="view_inventory_tutorial_kanban" model="ir.ui.view">
+        <field name="name">inventory.tutorial.kanban</field>
+        <field name="model">inventory.tutorial</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="name"/>
+                <field name="category"/>
+                <field name="description"/>
+                <field name="gif_guide"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_card oe_kanban_global_click">
+                            <div class="oe_kanban_content">
+                                <div class="o_kanban_record_title">
+                                    <field name="name"/>
+                                    <t t-if="record.gif_guide.raw_value">
+                                        <span class="badge badge-success ml-2">🎬 GIF</span>
+                                    </t>
+                                </div>
+                                <div class="o_kanban_record_body">
+                                    <field name="description"/>
+                                </div>
+                                <div class="o_kanban_record_bottom">
+                                    <div class="oe_kanban_bottom_left">
+                                        <span class="badge badge-pill badge-info">
+                                            <field name="category"/>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- Acción para tutoriales -->
+    <record id="action_inventory_tutorial" model="ir.actions.act_window">
+        <field name="name">Tutoriales de Inventario</field>
+        <field name="res_model">inventory.tutorial</field>
+        <field name="view_mode">kanban,list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                ¡Crea tu primer tutorial de inventario!
+            </p>
+            <p>
+                Los tutoriales te ayudarán a aprender cómo trabajar con el módulo de inventario de Odoo.
+            </p>
+        </field>
+    </record>
+</odoo>

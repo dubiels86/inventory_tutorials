@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Tutorial 1: Conceptos Básicos -->
+        <record id="tutorial_basic_concepts" model="inventory.tutorial">
+            <field name="name">Conceptos Básicos de Inventario</field>
+            <field name="sequence">10</field>
+            <field name="category">basic</field>
+            <field name="description">Aprende los conceptos fundamentales del módulo de inventario en Odoo.</field>
+            <field name="content"><![CDATA[
+                <h3>Conceptos Básicos de Inventario</h3>
+                <p>El módulo de inventario en Odoo te permite gestionar:</p>
+                <ul>
+                    <li><strong>Productos:</strong> Artículos que vendes o compras</li>
+                    <li><strong>Ubicaciones:</strong> Lugares donde almacenas productos</li>
+                    <li><strong>Movimientos:</strong> Transferencias de productos entre ubicaciones</li>
+                    <li><strong>Operaciones:</strong> Recepciones, entregas, transferencias internas</li>
+                </ul>
+                <h4>Navegación Básica:</h4>
+                <ol>
+                    <li>Ve a <strong>Inventario → Productos → Productos</strong></li>
+                    <li>Explora <strong>Inventario → Operaciones → Transferencias</strong></li>
+                    <li>Revisa <strong>Inventario → Reportes → Valoración del Inventario</strong></li>
+                </ol>
+            ]]></field>
+        </record>
+
+        <!-- Tutorial 2: Crear Productos -->
+        <record id="tutorial_create_products" model="inventory.tutorial">
+            <field name="name">Crear y Configurar Productos</field>
+            <field name="sequence">20</field>
+            <field name="category">operations</field>
+            <field name="description">Aprende a crear y configurar productos para el inventario.</field>
+            <field name="content"><![CDATA[
+                <h3>Crear y Configurar Productos</h3>
+                <h4>Pasos para crear un producto:</h4>
+                <ol>
+                    <li>Ve a <strong>Inventario → Productos → Productos</strong></li>
+                    <li>Haz clic en <strong>Crear</strong></li>
+                    <li>Completa los campos básicos:
+                        <ul>
+                            <li><strong>Nombre del producto</strong></li>
+                            <li><strong>Tipo de producto:</strong> Almacenable, Consumible o Servicio</li>
+                            <li><strong>Referencia interna</strong> (código del producto)</li>
+                        </ul>
+                    </li>
+                    <li>En la pestaña <strong>Inventario</strong>:
+                        <ul>
+                            <li>Configura las <strong>Rutas</strong> (Comprar, Fabricar, etc.)</li>
+                            <li>Define las <strong>Reglas de reabastecimiento</strong></li>
+                        </ul>
+                    </li>
+                </ol>
+                <p><strong>Consejo:</strong> Usa códigos de barras para facilitar las operaciones de inventario.</p>
+            ]]></field>
+        </record>
+
+        <!-- Tutorial 3: Operaciones de Inventario -->
+        <record id="tutorial_inventory_operations" model="inventory.tutorial">
+            <field name="name">Operaciones de Inventario</field>
+            <field name="sequence">30</field>
+            <field name="category">operations</field>
+            <field name="description">Aprende a realizar las operaciones principales de inventario.</field>
+            <field name="content"><![CDATA[
+                <h3>Operaciones de Inventario</h3>
+                <h4>Principales operaciones:</h4>
+                
+                <h5>1. Recepciones (Compras)</h5>
+                <ul>
+                    <li>Ve a <strong>Inventario → Operaciones → Recepciones</strong></li>
+                    <li>Valida las recepciones pendientes</li>
+                    <li>Escanea códigos de barras o ingresa cantidades manualmente</li>
+                </ul>
+
+                <h5>2. Entregas (Ventas)</h5>
+                <ul>
+                    <li>Ve a <strong>Inventario → Operaciones → Entregas</strong></li>
+                    <li>Procesa las órdenes de entrega</li>
+                    <li>Confirma la disponibilidad de productos</li>
+                </ul>
+
+                <h5>3. Transferencias Internas</h5>
+                <ul>
+                    <li>Ve a <strong>Inventario → Operaciones → Transferencias Internas</strong></li>
+                    <li>Mueve productos entre ubicaciones</li>
+                    <li>Útil para reorganizar el almacén</li>
+                </ul>
+
+                <h5>4. Ajustes de Inventario</h5>
+                <ul>
+                    <li>Ve a <strong>Inventario → Operaciones → Ajustes de Inventario</strong></li>
+                    <li>Corrige diferencias en las cantidades</li>
+                    <li>Realiza conteos físicos</li>
+                </ul>
+            ]]></field>
+        </record>
+
+        <!-- Tutorial 4: Reportes -->
+        <record id="tutorial_inventory_reports" model="inventory.tutorial">
+            <field name="name">Reportes de Inventario</field>
+            <field name="sequence">40</field>
+            <field name="category">reports</field>
+            <field name="description">Aprende a generar y analizar reportes de inventario.</field>
+            <field name="content"><![CDATA[
+                <h3>Reportes de Inventario</h3>
+                <p>Los reportes te ayudan a analizar el estado de tu inventario:</p>
+
+                <h4>Reportes Principales:</h4>
+                <ul>
+                    <li><strong>Valoración del Inventario:</strong> Valor total del stock</li>
+                    <li><strong>Movimientos de Inventario:</strong> Historial de movimientos</li>
+                    <li><strong>Productos por Ubicación:</strong> Distribución del inventario</li>
+                    <li><strong>Análisis de Inventario:</strong> Rotación y tendencias</li>
+                </ul>
+
+                <h4>Cómo acceder:</h4>
+                <ol>
+                    <li>Ve a <strong>Inventario → Reportes</strong></li>
+                    <li>Selecciona el reporte deseado</li>
+                    <li>Aplica filtros por fecha, producto o ubicación</li>
+                    <li>Exporta a Excel o PDF si es necesario</li>
+                </ol>
+
+                <h4>Consejos:</h4>
+                <ul>
+                    <li>Revisa regularmente la valoración del inventario</li>
+                    <li>Usa filtros para análisis específicos</li>
+                    <li>Programa reportes automáticos para seguimiento</li>
+                </ul>
+            ]]></field>
+        </record>
+
+        <!-- Tutorial 5: Fabricación y Lista de Materiales -->
+        <record id="tutorial_manufacturing_bom" model="inventory.tutorial">
+            <field name="name">Fabricación: Lista de Materiales</field>
+            <field name="sequence">50</field>
+            <field name="category">operations</field>
+            <field name="description">Aprende a crear listas de materiales para productos fabricados.</field>
+            <field name="content"><![CDATA[
+                <h3>Fabricación: Lista de Materiales (BOM)</h3>
+                
+                <h4>¿Qué es una Lista de Materiales?</h4>
+                <p>Una Lista de Materiales (BOM) define qué componentes y en qué cantidades se necesitan para fabricar un producto.</p>
+
+                <h4>Pasos para crear una BOM:</h4>
+                <ol>
+                    <li><strong>Instalar el módulo de Fabricación:</strong>
+                        <ul>
+                            <li>Ve a <strong>Aplicaciones</strong></li>
+                            <li>Busca e instala "Fabricación"</li>
+                        </ul>
+                    </li>
+                    <li><strong>Crear el producto final:</strong>
+                        <ul>
+                            <li>Ve a <strong>Inventario → Productos → Productos</strong></li>
+                            <li>Crea un producto con tipo "Almacenable"</li>
+                            <li>En la pestaña Inventario, marca "Fabricar"</li>
+                        </ul>
+                    </li>
+                    <li><strong>Crear la Lista de Materiales:</strong>
+                        <ul>
+                            <li>Ve a <strong>Fabricación → Productos → Listas de Materiales</strong></li>
+                            <li>Haz clic en "Crear"</li>
+                            <li>Selecciona el producto a fabricar</li>
+                            <li>Define la cantidad a producir</li>
+                        </ul>
+                    </li>
+                    <li><strong>Agregar componentes:</strong>
+                        <ul>
+                            <li>En la pestaña "Componentes"</li>
+                            <li>Agrega cada material necesario</li>
+                            <li>Especifica la cantidad de cada componente</li>
+                        </ul>
+                    </li>
+                    <li><strong>Configurar operaciones (opcional):</strong>
+                        <ul>
+                            <li>En la pestaña "Operaciones"</li>
+                            <li>Define los pasos de fabricación</li>
+                            <li>Asigna centros de trabajo</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h4>Ejemplo práctico:</h4>
+                <p><strong>Producto:</strong> Sandwich de Jamón y Queso</p>
+                <p><strong>Componentes:</strong></p>
+                <ul>
+                    <li>Pan de molde: 2 rebanadas</li>
+                    <li>Jamón: 100 gramos</li>
+                    <li>Queso: 50 gramos</li>
+                    <li>Lechuga: 2 hojas</li>
+                    <li>Tomate: 3 rodajas</li>
+                    <li>Mayonesa: 10 gramos</li>
+                    <li>Mantequilla: 5 gramos</li>
+                </ul>
+
+                <h4>Consejos importantes:</h4>
+                <ul>
+                    <li>Verifica que todos los componentes tengan stock</li>
+                    <li>Usa unidades de medida consistentes</li>
+                    <li>Considera desperdicios en las cantidades</li>
+                    <li>Prueba la BOM con una orden pequeña primero</li>
+                </ul>
+            ]]></field>
+        </record>
+
+        <!-- Tutorial 6: Configuración Avanzada -->
+        <record id="tutorial_advanced_config" model="inventory.tutorial">
+            <field name="name">Configuración Avanzada</field>
+            <field name="sequence">60</field>
+            <field name="category">advanced</field>
+            <field name="description">Configuraciones avanzadas para optimizar tu inventario.</field>
+            <field name="content"><![CDATA[
+                <h3>Configuración Avanzada</h3>
+                
+                <h4>Reglas de Reabastecimiento:</h4>
+                <ul>
+                    <li>Ve a <strong>Inventario → Configuración → Reglas de Reabastecimiento</strong></li>
+                    <li>Define mínimos y máximos de stock</li>
+                    <li>Configura proveedores preferidos</li>
+                    <li>Establece cantidades múltiples de pedido</li>
+                </ul>
+
+                <h4>Ubicaciones y Almacenes:</h4>
+                <ul>
+                    <li>Configura múltiples almacenes si es necesario</li>
+                    <li>Crea ubicaciones específicas (estanterías, pasillos)</li>
+                    <li>Define estrategias de remoción (FIFO, LIFO)</li>
+                </ul>
+
+                <h4>Rutas y Operaciones:</h4>
+                <ul>
+                    <li>Personaliza rutas de productos</li>
+                    <li>Configura operaciones de picking</li>
+                    <li>Define estrategias de reserva</li>
+                </ul>
+
+                <h4>Códigos de Barras:</h4>
+                <ul>
+                    <li>Activa el módulo de códigos de barras</li>
+                    <li>Configura formatos de códigos</li>
+                    <li>Usa aplicación móvil para escaneo</li>
+                </ul>
+            ]]></field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menú principal -->
+    <menuitem id="menu_inventory_tutorials_root"
+              name="Tutoriales"
+              sequence="100"/>
+
+    <!-- Submenú de tutoriales -->
+    <menuitem id="menu_inventory_tutorials"
+              name="Ver Tutoriales"
+              parent="menu_inventory_tutorials_root"
+              action="action_inventory_tutorial"
+              sequence="10"/>
+</odoo>
