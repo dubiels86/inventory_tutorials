@@ -198,10 +198,203 @@
             ]]></field>
         </record>
 
-        <!-- Tutorial 6: Configuración Avanzada -->
+        <!-- Tutorial 6: Punto de Venta -->
+        <record id="tutorial_point_of_sale" model="inventory.tutorial">
+            <field name="name">Punto de Venta (POS)</field>
+            <field name="sequence">55</field>
+            <field name="category">operations</field>
+            <field name="description">Aprende a configurar y usar el punto de venta para ventas directas.</field>
+            <field name="content"><![CDATA[
+                <h3>Punto de Venta (POS)</h3>
+                
+                <h4>¿Qué es el Punto de Venta?</h4>
+                <p>El POS permite realizar ventas directas al cliente con interfaz táctil, ideal para tiendas, restaurantes y comercios.</p>
+
+                <h4>Configuración inicial:</h4>
+                <ol>
+                    <li><strong>Instalar el módulo:</strong>
+                        <ul>
+                            <li>Ve a <strong>Aplicaciones</strong></li>
+                            <li>Busca e instala "Punto de Venta"</li>
+                        </ul>
+                    </li>
+                    <li><strong>Configurar el POS:</strong>
+                        <ul>
+                            <li>Ve a <strong>Punto de Venta → Configuración → Puntos de Venta</strong></li>
+                            <li>Crea un nuevo punto de venta</li>
+                            <li>Define el nombre y ubicación</li>
+                            <li>Selecciona el diario de ventas</li>
+                        </ul>
+                    </li>
+                    <li><strong>Configurar productos:</strong>
+                        <ul>
+                            <li>Ve a <strong>Punto de Venta → Productos → Productos</strong></li>
+                            <li>Marca "Disponible en POS" en cada producto</li>
+                            <li>Define precios y categorías</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h4>Usar el POS:</h4>
+                <ol>
+                    <li><strong>Abrir sesión:</strong>
+                        <ul>
+                            <li>Ve a <strong>Punto de Venta → Panel</strong></li>
+                            <li>Haz clic en "Nueva Sesión"</li>
+                            <li>Ingresa el efectivo inicial</li>
+                        </ul>
+                    </li>
+                    <li><strong>Realizar ventas:</strong>
+                        <ul>
+                            <li>Selecciona productos desde la pantalla</li>
+                            <li>Ajusta cantidades si es necesario</li>
+                            <li>Aplica descuentos o promociones</li>
+                            <li>Procesa el pago (efectivo, tarjeta)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Cerrar sesión:</strong>
+                        <ul>
+                            <li>Haz clic en "Cerrar"</li>
+                            <li>Cuenta el efectivo final</li>
+                            <li>Confirma el cierre de caja</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h4>Funciones avanzadas:</h4>
+                <ul>
+                    <li><strong>Códigos de barras:</strong> Escanea productos rápidamente</li>
+                    <li><strong>Clientes:</strong> Registra y busca clientes</li>
+                    <li><strong>Facturas:</strong> Genera facturas desde el POS</li>
+                    <li><strong>Devoluciones:</strong> Procesa devoluciones de productos</li>
+                    <li><strong>Reportes:</strong> Analiza ventas por período</li>
+                </ul>
+
+                <h4>Consejos importantes:</h4>
+                <ul>
+                    <li>Configura métodos de pago antes de usar</li>
+                    <li>Entrena al personal en el uso del POS</li>
+                    <li>Realiza cierres de caja diarios</li>
+                    <li>Mantén actualizado el inventario</li>
+                    <li>Usa categorías para organizar productos</li>
+                </ul>
+            ]]></field>
+        </record>
+
+        <!-- Tutorial 7: Módulo de Gastos -->
+        <record id="tutorial_expenses" model="inventory.tutorial">
+            <field name="name">Módulo de Gastos</field>
+            <field name="sequence">65</field>
+            <field name="category">operations</field>
+            <field name="description">Aprende a gestionar gastos de empleados y reembolsos.</field>
+            <field name="content"><![CDATA[
+                <h3>Módulo de Gastos</h3>
+                
+                <h4>¿Qué es el Módulo de Gastos?</h4>
+                <p>Permite a los empleados registrar gastos de trabajo y solicitar reembolsos de manera organizada.</p>
+
+                <h4>Configuración inicial:</h4>
+                <ol>
+                    <li><strong>Instalar el módulo:</strong>
+                        <ul>
+                            <li>Ve a <strong>Aplicaciones</strong></li>
+                            <li>Busca e instala "Gastos"</li>
+                        </ul>
+                    </li>
+                    <li><strong>Configurar categorías de gastos:</strong>
+                        <ul>
+                            <li>Ve a <strong>Gastos → Configuración → Categorías de Gastos</strong></li>
+                            <li>Crea categorías como: Transporte, Comidas, Hospedaje, Materiales</li>
+                            <li>Define cuentas contables para cada categoría</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h4>Registrar gastos (Empleados):</h4>
+                <ol>
+                    <li><strong>Crear nuevo gasto:</strong>
+                        <ul>
+                            <li>Ve a <strong>Gastos → Mis Gastos → Gastos</strong></li>
+                            <li>Haz clic en "Crear"</li>
+                            <li>Selecciona la categoría del gasto</li>
+                            <li>Ingresa descripción y monto</li>
+                        </ul>
+                    </li>
+                    <li><strong>Adjuntar comprobantes:</strong>
+                        <ul>
+                            <li>Sube fotos de recibos o facturas</li>
+                            <li>Completa fecha y detalles</li>
+                            <li>Guarda el gasto</li>
+                        </ul>
+                    </li>
+                    <li><strong>Crear reporte de gastos:</strong>
+                        <ul>
+                            <li>Ve a <strong>Gastos → Mis Gastos → Reportes de Gastos</strong></li>
+                            <li>Agrupa varios gastos en un reporte</li>
+                            <li>Envía para aprobación</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h4>Aprobar gastos (Gerentes):</h4>
+                <ol>
+                    <li><strong>Revisar reportes:</strong>
+                        <ul>
+                            <li>Ve a <strong>Gastos → Reportes de Gastos</strong></li>
+                            <li>Revisa gastos pendientes de aprobación</li>
+                            <li>Verifica comprobantes adjuntos</li>
+                        </ul>
+                    </li>
+                    <li><strong>Aprobar o rechazar:</strong>
+                        <ul>
+                            <li>Haz clic en "Aprobar" o "Rechazar"</li>
+                            <li>Agrega comentarios si es necesario</li>
+                            <li>Notifica al empleado</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h4>Procesar reembolsos (Contabilidad):</h4>
+                <ol>
+                    <li><strong>Generar asientos contables:</strong>
+                        <ul>
+                            <li>Los gastos aprobados crean asientos automáticamente</li>
+                            <li>Revisa en <strong>Contabilidad → Asientos</strong></li>
+                        </ul>
+                    </li>
+                    <li><strong>Procesar pagos:</strong>
+                        <ul>
+                            <li>Ve a <strong>Gastos → Reportes de Gastos</strong></li>
+                            <li>Haz clic en "Registrar Pago"</li>
+                            <li>Selecciona método de pago</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h4>Ejemplos de categorías:</h4>
+                <ul>
+                    <li><strong>Transporte:</strong> Taxis, combustible, peajes</li>
+                    <li><strong>Comidas:</strong> Almuerzos de trabajo, cenas con clientes</li>
+                    <li><strong>Hospedaje:</strong> Hoteles, alojamiento</li>
+                    <li><strong>Materiales:</strong> Útiles de oficina, herramientas</li>
+                    <li><strong>Comunicaciones:</strong> Teléfono, internet</li>
+                </ul>
+
+                <h4>Consejos importantes:</h4>
+                <ul>
+                    <li>Siempre adjunta comprobantes válidos</li>
+                    <li>Registra gastos inmediatamente</li>
+                    <li>Define políticas claras de gastos</li>
+                    <li>Revisa reportes regularmente</li>
+                    <li>Configura límites por categoría</li>
+                </ul>
+            ]]></field>
+        </record>
+
+        <!-- Tutorial 8: Configuración Avanzada -->
         <record id="tutorial_advanced_config" model="inventory.tutorial">
             <field name="name">Configuración Avanzada</field>
-            <field name="sequence">60</field>
+            <field name="sequence">80</field>
             <field name="category">advanced</field>
             <field name="description">Configuraciones avanzadas para optimizar tu inventario.</field>
             <field name="content"><![CDATA[
