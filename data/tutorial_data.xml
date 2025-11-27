@@ -132,24 +132,19 @@
 
         <!-- Tutorial 5: Fabricación y Lista de Materiales -->
         <record id="tutorial_manufacturing_bom" model="inventory.tutorial">
-            <field name="name">Fabricación: Lista de Materiales</field>
+            <field name="name">Fabricación: Lista de Materiales(Ficha ténica)</field>
             <field name="sequence">50</field>
             <field name="category">operations</field>
             <field name="description">Aprende a crear listas de materiales para productos fabricados.</field>
             <field name="content"><![CDATA[
-                <h3>Fabricación: Lista de Materiales (BOM)</h3>
+                <h3>Fabricación: Lista de Materiales (Ficha ténica)</h3>
                 
                 <h4>¿Qué es una Lista de Materiales?</h4>
-                <p>Una Lista de Materiales (BOM) define qué componentes y en qué cantidades se necesitan para fabricar un producto.</p>
+                <p>Una Lista de Materiales (Ficha ténica) define qué componentes y en qué cantidades se necesitan para fabricar un producto.</p>
 
-                <h4>Pasos para crear una BOM:</h4>
+                <h4>Pasos para crear una (Ficha ténica):</h4>
                 <ol>
-                    <li><strong>Instalar el módulo de Fabricación:</strong>
-                        <ul>
-                            <li>Ve a <strong>Aplicaciones</strong></li>
-                            <li>Busca e instala "Fabricación"</li>
-                        </ul>
-                    </li>
+                    
                     <li><strong>Crear el producto final:</strong>
                         <ul>
                             <li>Ve a <strong>Inventario → Productos → Productos</strong></li>
@@ -162,7 +157,6 @@
                             <li>Ve a <strong>Fabricación → Productos → Listas de Materiales</strong></li>
                             <li>Haz clic en "Crear"</li>
                             <li>Selecciona el producto a fabricar</li>
-                            <li>Define la cantidad a producir</li>
                         </ul>
                     </li>
                     <li><strong>Agregar componentes:</strong>
